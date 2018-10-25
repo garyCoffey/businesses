@@ -1,5 +1,9 @@
 <h1> <%= @business.name %> </h1>
 <p> Adress: <%= @business.address %> </p>
 <p> Description: <%= @business.description %> </p>
+<a href='/businesses/<%= @business.id %>/edit'><button> EDIT</button></a><br/><br/>
 
-<a href="/">Back</a>
+<form method="POST" action="/businesses/<%=@business.id %>">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete"/>
+</form>

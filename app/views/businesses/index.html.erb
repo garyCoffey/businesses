@@ -1,5 +1,5 @@
 <h1> All Businesses </h1>
-
+<a href='/businesses/new'/><button>Create</button></a>
 <ul> 
   <% @businesses.each do |business| %>
     <li> <a href="/businesses/<%= business.id %>"> <%= business.name%> </a> </li>

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get '/businesses/:id', to: 'businesses#show'
 
-  get '/business/:id/edit', to: 'bussinesses#edit'
+  get '/businesses/:id/edit', to: 'businesses#edit'
 
   post '/businesses', to: 'businesses#create'
 
